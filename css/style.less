@@ -1,5 +1,6 @@
 body {
   background: #2b4c8d;
+	font-size: 20px;
 }
 
 //-------Nav-----------------------------------------//
@@ -11,7 +12,7 @@ body {
   .nav {
     background: #2b4c8d;
     opacity: 0.9;
-    font-size: 18px;
+    font-size: 1em;
     a {
       color: white;
       padding: auto 10px;
@@ -47,14 +48,14 @@ body {
     text-shadow: 0 0 40px black;
     color: white;
     span {
-      font-size: 50px;
+      font-size: 2em
     }
   }
   h1 {
-    font-size: 6em;
+    font-size: 4em;
   }
   p {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
@@ -62,15 +63,28 @@ body {
 //------------------------------About me------------------------------//
 #aboutMe {
   padding: 50px;
-  .container {
+  .row {
     .opiss {
       p {
-        font-size: 20px;
+        font-size: 1.2em;
         color: white;
         text-align: center;
+				padding: 15px;
       }
     }
+		.foto{
+			
+			
+			img{
+				width: 70%;
+				height: auto;
+				margin:5% 15%;
+				
+				
+			}
+		}
   }
+	
 }
 
 //-----------------//About me------------------------------//
@@ -81,14 +95,14 @@ body {
   background-attachment: fixed;
   text-align: center;
   padding: 50px;
-  .container {
+  .container-fluid {
       opacity: 0.9;
       background: #2b4c8d;
       border-radius: 10px;
     .row {
       
       h4 {
-        font-size: 18px;
+        font-size: 1em;
         padding: 20px 20px;
         color: white;
         display: inline-block;
@@ -131,9 +145,7 @@ body {
   background: #2b4c8d;
   padding: 50px;
   .row {
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 100px;
+    
   }
   #pic1 {
     background: url(/images/computer-767781_1920.jpg);
@@ -178,7 +190,7 @@ body {
     }
     a {
       color: white;
-      font-size: 18px;
+      font-size: 1em;
       text-decoration: none;
       border: 1px solid white;
       &:hover {
@@ -211,8 +223,14 @@ body {
   p {
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 1em;
   }
+		.line2{
+			opacity: 0;
+			width: 50%;
+			border-bottom: 3px solid white;
+			
+		}
   }
 }
 
@@ -236,7 +254,7 @@ body {
 
 .wells {
   text-align: center;
-  font-size: 40px;
+  font-size: 2.2em;
   color: white;
   margin-top: 50px;
   text-shadow: 0 0 20px black;
@@ -249,4 +267,42 @@ body {
 
 .showw{
   opacity: 1;
+}
+
+@media (max-width:768px) {
+	body {
+		font-size: 18px;
+	}
+	#aboutMe{
+		padding: 10px;
+	}
+	#skills {
+		padding: 30px;
+		.container-fluid {
+			.row {
+				img {
+					width: 100px;
+					height: 100px;
+					margin: 5px;
+				}
+			}
+		}
+	}
+	
+	#myWork{
+		padding:10px;
+		margin: 0 auto;
+	}
+	
+	#contact{
+		padding: 20px;
+		
+		.line2{
+			opacity: 1;
+		}
+	}
+	
+	.hrPlus{
+		margin: 20px auto 50px auto;
+	}
 }
