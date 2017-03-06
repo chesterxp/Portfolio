@@ -2,61 +2,68 @@
 body {
   background: #2b4c8d;
   font-size: 20px;
+  font-family: 'Lato', sans-serif;
 }
-#menu .navbar {
-  background: #2b4c8d;
-  opacity: 0.7;
-}
+#menu .navbar,
 #menu .nav {
   background: #2b4c8d;
-  opacity: 0.9;
+  opacity: 0.8;
   font-size: 1em;
+  border: none;
 }
-#menu .nav a {
+#menu .navbar .nav a,
+#menu .nav .nav a {
   color: white;
-  padding: auto 10px;
+  padding: 15px 10px;
   text-transform: capitalize;
 }
-#menu .nav a:hover {
-  color: #c9787b;
+#menu .navbar .nav a:hover,
+#menu .nav .nav a:hover {
+  color: #e00a0a;
 }
-#menu .navbar-header {
+#menu .navbar .navbar-header,
+#menu .nav .navbar-header {
   padding: 2px 20px;
 }
-#menu .navbar-header .navbar-brand {
+#menu .navbar .navbar-header .navbar-brand,
+#menu .nav .navbar-header .navbar-brand {
   color: white;
 }
-.jumbotron {
+#menu .navbar .navbar-header .navbar-brand:hover,
+#menu .nav .navbar-header .navbar-brand:hover {
+  color: #e00a0a;
+}
+header .jumbotron {
   background: url('/images/macbook-606763_1920.jpg');
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
   margin-bottom: 0;
 }
-.jumbotron .napis {
+header .jumbotron .napis {
   padding: 12%;
 }
-.jumbotron h1,
-.jumbotron p,
-.jumbotron span,
-.jumbotron a {
+header .jumbotron h1,
+header .jumbotron p,
+header .jumbotron span,
+header .jumbotron a {
   text-shadow: 0 0 40px black;
   color: white;
 }
-.jumbotron h1 span,
-.jumbotron p span,
-.jumbotron span span,
-.jumbotron a span {
+header .jumbotron h1 span,
+header .jumbotron p span,
+header .jumbotron span span,
+header .jumbotron a span {
   font-size: 2em;
 }
-.jumbotron h1 {
+header .jumbotron h1 {
   font-size: 4em;
 }
-.jumbotron p {
+header .jumbotron p {
   font-size: 2em;
 }
 #aboutMe {
-  padding: 50px;
+  padding: 50px 0;
 }
 #aboutMe .row .opiss p {
   font-size: 1em;
@@ -68,31 +75,31 @@ body {
   width: 70%;
   height: auto;
   margin: 0 15%;
-  margin-bottom: 10%;
+  border-radius: 10px;
 }
 #skills {
   background: url("/images/purse-1478852_1920.jpg");
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  padding: 50px;
+  padding: 50px 0;
 }
-#skills .container-fluid {
+#skills .container {
   opacity: 0.9;
   background: #2b4c8d;
   border-radius: 10px;
 }
-#skills .container-fluid .row h4 {
+#skills .container .row h4 {
   font-size: 1em;
   padding: 20px 20px;
   color: white;
   display: inline-block;
   margin-bottom: 20px;
 }
-#skills .container-fluid .row img {
+#skills .container .row img {
   width: 150px;
   height: 150px;
-  margin: 10px;
+  margin: 10px 0;
   transform: scale(1, 1);
   transition-timing-function: ease-out;
   transition-duration: 250ms;
@@ -103,7 +110,7 @@ body {
   -moz-transition-timing-function: ease-out;
   -moz-transition-duration: 250ms;
 }
-#skills .container-fluid .row img:hover {
+#skills .container .row img:hover {
   transform: scale(1.1, 1.12);
   transition-timing-function: ease-out;
   transition-duration: 250ms;
@@ -117,10 +124,10 @@ body {
 }
 #myWork {
   background: #2b4c8d;
-  padding: 50px;
+  padding: 100px 0;
 }
 #myWork #pic1 {
-  background: url(/images/computer-767781_1920.jpg);
+  background: url(/images/forum2.JPG);
   background-size: cover;
 }
 #myWork #pic2 {
@@ -132,33 +139,26 @@ body {
   background-size: cover;
 }
 #myWork #pic4 {
-  background: url(/images/1486869414_sass_icon.png);
-  background-size: cover;
-}
-#myWork #pic5 {
   background: url(/images/computer-767781_1920.jpg);
-  background-size: cover;
-}
-#myWork #pic6 {
-  background: url(/images/macbook-606763_1920.jpg);
   background-size: cover;
 }
 #myWork .project {
   background: url(/images/rece577758_1920.jpg);
   background-size: cover;
-  width: 350px;
+  width: 100%;
   height: 300px;
-  margin: 10px auto;
+  margin: 10px 0px;
   border-radius: 5px;
 }
 #myWork .project .text2 {
-  width: 350px;
+  width: 600px;
   height: 300px;
   background: black;
   opacity: 0;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  border-radius: 5px;
 }
 #myWork .project a {
   color: white;
@@ -179,7 +179,7 @@ body {
   background: url('/images/computer-767781_1920.jpg');
   background-size: cover;
   background-attachment: fixed;
-  padding: 50px;
+  padding: 100px 0;
 }
 #contact .container {
   background: #2b4c8d;
@@ -200,6 +200,7 @@ body {
   padding: 5px 0;
   background: #09102a;
   color: white;
+  font-size: 0.6em;
 }
 .hrPlus {
   border-bottom: 3px solid white;
@@ -225,25 +226,28 @@ body {
     font-size: 18px;
   }
   #aboutMe {
-    padding: 10px;
-  }
-  #skills {
     padding: 30px;
   }
-  #skills .container-fluid .row img {
-    width: 100px;
-    height: 100px;
+  #skills {
+    padding: 30px 10px;
+  }
+  #skills .container .row img {
+    width: 125px;
+    height: 125px;
     margin: 5px;
   }
   #myWork {
-    padding: 5px;
+    padding: 30px 0;
+  }
+  #myWork .row {
     margin: 0 auto;
   }
   #myWork .row .project {
-    width: 300px;
+    width: 280px;
+    margin: 10px auto;
   }
   #contact {
-    padding: 20px;
+    padding: 30px 10px;
   }
   #contact .line2 {
     opacity: 1;

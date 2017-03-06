@@ -1,37 +1,42 @@
 body {
 	background: #2b4c8d;
 	font-size: 20px;
+	font-family: 'Lato', sans-serif;
 }
 
 //-------Nav-----------------------------------------//
 #menu {
-	.navbar {
-		background: #2b4c8d;
-		opacity: 0.7;
-	}
+	.navbar,
 	.nav {
 		background: #2b4c8d;
-		opacity: 0.9;
+		opacity: 0.8;
 		font-size: 1em;
-		a {
-			color: white;
-			padding: auto 10px;
-			text-transform: capitalize;
-			&:hover {
-				color: #c9787b;
+		border: none;
+		.nav {
+			a {
+				color: white;
+				padding: 15px 10px;
+				text-transform: capitalize;
+				&:hover {
+					color: #e00a0a;
+				}
 			}
 		}
-	}
-	.navbar-header {
-		padding: 2px 20px;
-		.navbar-brand {
-			color: white;
+		.navbar-header {
+			padding: 2px 20px;
+			.navbar-brand {
+				color: white;
+				&:hover{
+					color: #e00a0a;
+				}
+			}
 		}
 	}
 }
 
 //-------//Nav---------------------------------------//
 //-----------Header----------------------------------//
+header{
 .jumbotron {
 	background: url('/images/macbook-606763_1920.jpg');
 	background-size: cover;
@@ -58,11 +63,12 @@ body {
 		font-size: 2em;
 	}
 }
+}
 
 //------------//Header------------------------//
 //------------------------------About me------------------------------//
 #aboutMe {
-	padding: 50px;
+	padding: 50px 0;
 	.row {
 		.opiss {
 			p {
@@ -77,7 +83,8 @@ body {
 				width: 70%;
 				height: auto;
 				margin: 0 15%;
-				margin-bottom: 10%;
+				border-radius: 10px;
+				
 			}
 		}
 	}
@@ -90,8 +97,8 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	text-align: center;
-	padding: 50px;
-	.container-fluid {
+	padding: 50px 0;
+	.container {
 		opacity: 0.9;
 		background: #2b4c8d;
 		border-radius: 10px;
@@ -106,7 +113,7 @@ body {
 			img {
 				width: 150px;
 				height: 150px;
-				margin: 10px;
+				margin: 10px 0;
 				transform: scale(1, 1);
 				transition-timing-function: ease-out;
 				transition-duration: 250ms;
@@ -138,9 +145,9 @@ body {
 //------------------MyWork -------------------------------/
 #myWork {
 	background: #2b4c8d;
-	padding: 50px;
+	padding: 100px 0;
 	#pic1 {
-		background: url(/images/computer-767781_1920.jpg);
+		background: url(/images/forum2.JPG);
 		background-size: cover;
 	}
 	#pic2 {
@@ -152,32 +159,26 @@ body {
 		background-size: cover;
 	}
 	#pic4 {
-		background: url(/images/1486869414_sass_icon.png);
-		background-size: cover;
-	}
-	#pic5 {
 		background: url(/images/computer-767781_1920.jpg);
 		background-size: cover;
 	}
-	#pic6 {
-		background: url(/images/macbook-606763_1920.jpg);
-		background-size: cover;
-	}
+	
 	.project {
 		background: url(/images/rece577758_1920.jpg);
 		background-size: cover;
-		width: 350px;
+		width: 100%;
 		height: 300px;
-		margin: 10px auto;
+		margin: 10px 0px;
 		border-radius: 5px;
 		.text2 {
-			width: 350px;
+			width: 600px;
 			height: 300px;
 			background: black;
 			opacity: 0;
 			display: table-cell;
 			vertical-align: middle;
 			text-align: center;
+			border-radius: 5px;
 		}
 		a {
 			color: white;
@@ -205,7 +206,7 @@ body {
 	background: url('/images/computer-767781_1920.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	padding: 50px;
+	padding: 100px 0;
 	.container {
 		background: #2b4c8d;
 		opacity: 0.9;
@@ -229,6 +230,7 @@ body {
 	padding: 5px 0;
 	background: #09102a;
 	color: white;
+	font-size: 0.6em;
 }
 
 //----------------------------//footer---------------------------//
@@ -262,31 +264,33 @@ body {
 		font-size: 18px;
 	}
 	#aboutMe {
-		padding: 10px;
+		padding: 30px;
 	}
 	#skills {
-		padding: 30px;
-		.container-fluid {
+		padding: 30px 10px;
+		.container {
 			.row {
 				img {
-					width: 100px;
-					height: 100px;
+					width: 125px;;
+					height: 125px;
 					margin: 5px;
 				}
 			}
 		}
 	}
 	#myWork {
-		padding: 5px;
-		margin: 0 auto;
+		padding: 30px 0;
+		
 		.row {
+			margin: 0 auto;
 			.project {
-				width: 300px;
+				width: 280px;
+				margin: 10px auto;
 			}
 		}
 	}
 	#contact {
-		padding: 20px;
+		padding: 30px 10px;
 		.line2 {
 			opacity: 1;
 		}
