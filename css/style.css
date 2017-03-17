@@ -4,10 +4,18 @@ body {
   font-size: 20px;
   font-family: 'Lato', sans-serif;
 }
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Roboto', sans-serif;
+}
 #menu .navbar,
 #menu .nav {
   background: #2b4c8d;
-  opacity: 0.8;
+  opacity: 0.7;
   border: none;
   font-size: 0.9em;
 }
@@ -39,7 +47,7 @@ body {
   color: #968888;
 }
 header .jumbotron {
-  background: url('/images/macbook-606763_1920.jpg') no-repeat center center;
+  background: url('/images/header.jpg') no-repeat center bottom;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -47,7 +55,7 @@ header .jumbotron {
   height: 100vh;
 }
 header .jumbotron .napis {
-  padding: 12%;
+  padding: 20% 0 10% 0;
 }
 header .jumbotron .napis h1,
 header .jumbotron .napis p {
@@ -102,7 +110,7 @@ header .jumbotron a span {
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  padding: 50px 0 100px 0;
+  padding: 150px 0;
 }
 #skills .container {
   opacity: 0.9;
@@ -200,7 +208,7 @@ header .jumbotron a span {
   background: url('/images/computer-767781_1920.jpg');
   background-size: cover;
   background-attachment: fixed;
-  padding: 50px 0 100px 0;
+  padding: 10% 0;
 }
 #contact .container {
   background: #2b4c8d;
