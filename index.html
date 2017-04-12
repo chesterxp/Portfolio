@@ -233,24 +233,28 @@
 					<hr class="line2">
 				</div>
 				<div class="col-md-4 col-md-offset-1 col-xs-12">
-					<form method="post" action="contact.php">
+					<form method="post" action="contact.php" id="myForm">
 						<div class="form-group">
 							<!--<label for="userName">Name</label>-->
-							<input type="text" class="form-control" id="userName" name="name" placeholder="Imię i Nazwisko" required>
+							<input type="text" class="form-control" id="userName" name="name" placeholder="Imię" required >
+							<div class="error" id="userNameError"></div>
 						</div>
 						<div class="form-group">
 							<!--<label for="userTel">Telephone number</label>-->
 							<input type="tel" class="form-control" id="userTel" name="tel" placeholder="Telefon" >
+							<div class="error" id="userTelError"></div>
 						</div>
 						<div class="form-group">
 							<!--<label for="userEmail">Email address</label>-->
 							<input type="email" class="form-control" id="userEmail" name="email" placeholder="Adres email" required>
+							<div class="error" id="userEmailError"></div>
 						</div>
 						<div class="form-group">
-							<textarea id="userMessage" type="text" class="form-control" rows="3" name="message" placeholder="Twoja wiadomość" required></textarea>
+							<textarea id="userMessage" type="text" class="form-control" rows="3" name="message" placeholder="Twoja wiadomość" required ></textarea>
+							<div class="error" id="userMessageError"></div>
 						</div>
 						<br>
-						<button type="submit" class="btn btn-info center-block" name="submit">Wyślij</button>
+						<button type="submit" class="btn btn-info center-block" name="submit" id="submit" >Wyślij</button>
 					</form>
 					<br>
 					<br>

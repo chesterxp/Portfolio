@@ -225,6 +225,15 @@ header .jumbotron a span {
   width: 50%;
   border-bottom: 3px solid white;
 }
+#contact .container .form-group {
+  margin-bottom: 10px;
+}
+#contact .container .error {
+  color: #ff0000;
+  font-size: 0.8em;
+  padding-top: 7px;
+  margin: 0;
+}
 #footer {
   padding: 5px 0;
   background: #09102a;
@@ -278,6 +287,18 @@ header .jumbotron a span {
   #aboutMe {
     padding: 30px 10px;
   }
+  #aboutMe .row .opiss i {
+    font-size: 40px;
+    color: white;
+    padding: 5px 30px;
+    margin-bottom: 10px;
+  }
+  #aboutMe .row .foto img {
+    width: 70%;
+    height: auto;
+    margin: 10% 15%;
+    border-radius: 10px;
+  }
   #skills {
     padding: 30px 15px;
   }
@@ -307,5 +328,16 @@ header .jumbotron a span {
   }
   .hrPlus {
     margin: 20px auto 50px auto;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  #contact {
+    padding: 30px 10px;
+  }
+  #contact .line2 {
+    opacity: 1;
+  }
+  #contact form {
+    padding: 0 80px;
   }
 }
