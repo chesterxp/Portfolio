@@ -8,8 +8,7 @@ body {
 	background: @color-blue;
 	font-size: 20px;
 	font-family: 'Lato', sans-serif;
-  color: @color-white;
-	
+    color: @color-white;
 	h1, h2, h3, h4, h5, h6{
 		font-family: 'Roboto', sans-serif;
 	}
@@ -17,14 +16,14 @@ body {
 
 //-------Nav-----------------------------------------//
 #menu {
-  position: absolute;
-  width: 100%;
   
+  width: 100%;
+  z-index: 11;
+  position: absolute;
 	.navbar,
 	.nav {
       
 		background: transparent;
-		
 		border: none;
 		font-size: 0.9em;
 		margin-bottom: 0;
@@ -112,7 +111,8 @@ body {
 
 //-----------Header----------------------------------//
 header {
-  
+   position: relative;
+   z-index: 10;
 	.jumbotron {
       
 		background: url('/images/header.jpg') no-repeat center bottom;
@@ -157,7 +157,9 @@ header {
 #aboutMe {
 	padding: 50px 0 100px 0;
 	text-align: center;
-	
+    position: relative;
+    z-index: 10;
+    background: @color-blue;
 	.row {
 		.opiss {
 			p {
@@ -195,7 +197,9 @@ header {
 	background-attachment: fixed;
 	text-align: center;
 	padding: 150px 0;
-	
+    position: relative;
+    z-index: 14;
+  
 	.container {
 		opacity: 0.9;
 		background: @color-blue;
@@ -242,8 +246,10 @@ header {
 //-----------------------Skills------------------------//
 //------------------MyWork -------------------------------/
 #myWork {
-	
+	z-index: 10;
+    position: relative;
 	padding: 50px 0 100px 0;
+    background: @color-blue;
 	#pic1 {
 		background: url(/images/zmf.JPG) no-repeat center center;
 		background-size: cover;
@@ -302,19 +308,20 @@ header {
 //------------------//MyWork -------------------------------/
 
 //--ScrollUP------------------------------------------------------//
-#scrollUp{
+#scrollUp {
   position: fixed;
   bottom: 80px;
   right: 30px;
-  z-index: 10;
+  z-index: 100;
   display: none;
- 
-  a{
+  a {
     text-decoration: none;
-    i{
+    i {
       font-size: 60px;
       color: @color-white;
-      
+      &:hover {
+        color: @color-green;
+      }
     }
   }
 }
@@ -328,7 +335,12 @@ header {
 	background: url('/images/computer-767781_1920.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	padding: 10% 0;
+	padding: 7% 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 	
 	.container {
 		background: @color-blue;
@@ -356,6 +368,11 @@ header {
       }
       #submit{
         background: @color-green;
+        border: none;
+        
+        &:hover{
+          background: #579342;
+        }
       }
 	}
 }

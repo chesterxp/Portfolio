@@ -86,4 +86,15 @@ $(document).ready(function () {
 // });
     //-----------------------------//Nav2-------------------------------------//
   
+//-------------------------padding-bottom - footer -----------------//
+
+  var paddingBottomFooter = $('#contact').css('height');
+  $('body').css('padding-bottom',paddingBottomFooter);
+//-------------------------padding-bottom - footer -----------------/
+ 
 });
+
+//
+//  $(window).onresize(function(){
+// 
+//    });
