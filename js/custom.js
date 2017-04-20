@@ -17,6 +17,50 @@ $(document).ready(function () {
   });
   //-----------------------//viewportChecker-------------------------------//
   
+  //----------------myWork----------------------//
+  $('.buttonChange').mousedown(function(){
+    $(this).css('top','2px');
+  });
+  $('.buttonChange').mouseup(function(){
+    $(this).css('top','0px');
+  });
+  
+  
+  $('#all').click(function(){
+    $('.buttonChange').fadeIn(200);
+  });
+  
+  $('#psd').click(function(){
+    $('.psd').fadeIn(200);
+    $('.strona').fadeOut(200);
+    $('.js').fadeOut(200);
+    
+  });
+  
+  $('#all').click(function(){
+    $('.buttonChange').fadeIn(200);
+  });
+  
+  $('#all').click(function(){
+    $('.project').fadeIn(200);
+  });
+  
+  $('#main').click(function(){
+    $('.psd').fadeOut(200);
+    $('.strona').fadeIn(200);
+    $('.js').fadeOut(200);
+  });
+  
+  $('#js').click(function(){
+    $('.psd').fadeOut(200);
+    $('.strona').fadeOut(200);
+    $('.js').fadeIn(200);
+  });  
+  
+  
+  
+  
+  //----------------//myWork----------------------//
   
   //-----------------------------form-------------------------------------//
   $('#userName').change(function () {
@@ -63,7 +107,7 @@ $(document).ready(function () {
   
   //-----------------------------ScrollUp-------------------------------------//
   $(window).scroll(function(){
-    if($(this).scrollTop()>800){
+    if($(this).scrollTop()>600){
       $('#scrollUp').fadeIn(2000);
       $('#nav2').fadeIn(2000);
     }

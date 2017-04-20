@@ -13,6 +13,9 @@ body h5,
 body h6 {
   font-family: 'Roboto', sans-serif;
 }
+body p {
+  margin: 0;
+}
 #menu {
   width: 100%;
   z-index: 11;
@@ -58,7 +61,7 @@ body h6 {
 #nav2 {
   width: 60px;
   text-align: center;
-  background: #A6ED8E;
+  background: #a6ed8e;
   border-radius: 0 5px 5px 0;
   position: fixed;
   left: -50px;
@@ -71,10 +74,10 @@ body h6 {
   color: #f6f5f5;
   position: relative;
   left: 20px;
-  top: -45px;
+  top: -50px;
   font-size: 0.6em;
   opacity: 0;
-  background: #1AA59A;
+  background: #1aa59a;
   border-radius: 5px;
   padding: 5px;
   width: 75px;
@@ -90,7 +93,7 @@ body h6 {
   margin: 0 auto;
 }
 #nav2 #hideMenu a i:hover {
-  background: #1AA59A;
+  background: #1aa59a;
 }
 #nav2 #hideMenu a i:hover .text {
   opacity: 1;
@@ -242,53 +245,100 @@ header .jumbotron a span {
   padding: 50px 0 100px 0;
   background: #1b5a7a;
 }
-#myWork #pic1 {
+#myWork .buttons {
+  width: 60%;
+  margin: 0px auto 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  box-shadow: 0px 2px rgba(139, 137, 137, 0.62);
+  border-radius: 5px;
+}
+#myWork .buttons .buttonChange {
+  width: 25%;
+  background: #a6ed8e;
+  color: #f6f5f5;
+  padding: 5px 0px;
+  position: relative;
+  transition: all 0.1s ease;
+  font-size: 0.8em;
+}
+#myWork .buttons .buttonChange:first-child {
+  border-radius: 5px 0 0 5px;
+}
+#myWork .buttons .buttonChange:last-child {
+  border-radius: 0 5px 5px 0;
+}
+#myWork .buttons .buttonChange:hover {
+  background: #1aa59a;
+  cursor: pointer;
+}
+#myWork #portfolio {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#myWork #portfolio .project {
+  width: 45%;
+  height: 350px;
+  margin: 10px;
+}
+#myWork #portfolio .project .description {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#myWork #portfolio .project .description .name {
+  padding: 50px 20px;
+}
+#myWork #portfolio .project .description .links {
+  padding: 10px 20px;
+}
+#myWork #portfolio .project .description .links a {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #f6f5f5;
+  color: #f6f5f5;
+  border-radius: 5px;
+}
+#myWork #portfolio .project .description .links a:hover {
+  background: rgba(205, 211, 204, 0.43);
+}
+#myWork #portfolio .project .description .tech {
+  padding: 10px 20px;
+}
+#myWork #portfolio .project:hover .description {
+  opacity: 0.7;
+}
+#myWork #portfolio .bgProject1 {
   background: url(/images/zmf.JPG) no-repeat center center;
   background-size: cover;
 }
-#myWork #pic2 {
+#myWork #portfolio .bgProject2 {
   background: url(/images/PSD1.JPG) no-repeat center center;
   background-size: cover;
 }
-#myWork #pic3 {
+#myWork #portfolio .bgProject3 {
   background: url(/images/PSD2.JPG) no-repeat center center;
   background-size: cover;
 }
-#myWork #pic4 {
+#myWork #portfolio .bgProject4 {
   background: url(/images/psd3.JPG) no-repeat center center;
   background-size: cover;
 }
-#myWork .project {
-  width: 100%;
-  height: 300px;
-  margin: 10px 0px;
-  border-radius: 5px;
-}
-#myWork .project .text2 {
-  width: 600px;
-  height: 300px;
-  background: black;
-  opacity: 0;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  border-radius: 5px;
-}
-#myWork .project .text2 p {
-  color: #f6f5f5;
-}
-#myWork .project a {
-  color: #f6f5f5;
-  font-size: 1em;
-  text-decoration: none;
-  border: 1px solid #f6f5f5;
-}
-#myWork .project a:hover {
-  background: #6f6b6b;
-}
-#myWork .project:hover .text2 {
-  transition: opacity 0.5s;
-  opacity: 0.7;
+#myWork #portfolio .bgProject5 {
+  background: url(/images/purse-1478852_1920.jpg) no-repeat center center;
+  background-size: cover;
 }
 #scrollUp {
   position: fixed;
@@ -420,15 +470,21 @@ header .jumbotron a span {
   #skills .container #iconsBox .icon p {
     height: 150px;
   }
-  #myWork .container {
-    padding: 30px 0;
+  #myWork .buttons {
+    width: 90%;
   }
-  #myWork .container .row {
-    margin: 0 auto;
+  #myWork #portfolio {
+    width: 90%;
   }
-  #myWork .container .row .project {
-    width: 280px;
-    margin: 10px auto;
+  #myWork #portfolio .project {
+    width: 90%;
+    height: 150px;
+  }
+  #myWork #portfolio .project .description {
+    height: 150px;
+  }
+  #myWork #portfolio .project .description .name {
+    padding: 10px 0;
   }
   #contact {
     padding: 30px 10px;
@@ -437,7 +493,7 @@ header .jumbotron a span {
     margin: 10px auto 50px auto;
   }
   #contact form {
-    padding: 0 60px;
+    padding: 30px 60px 0 60px;
   }
   .hrPlus {
     margin: 20px auto 50px auto;
