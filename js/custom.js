@@ -89,12 +89,10 @@ $(document).ready(function () {
 //-------------------------padding-bottom - footer -----------------//
 
   var paddingBottomFooter = $('#contact').css('height');
-  $('body').css('padding-bottom',paddingBottomFooter);
+  console.log(paddingBottomFooter);
+  var zmiana = (parseFloat(paddingBottomFooter)+100)+'px';
+  console.log(zmiana);
+  $('body').css('padding-bottom',zmiana);
 //-------------------------padding-bottom - footer -----------------/
  
 });
-
-//
-//  $(window).onresize(function(){
-// 
-//    });
